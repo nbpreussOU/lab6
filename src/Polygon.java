@@ -1,4 +1,6 @@
+package lab6.src;
 import java.util.ArrayList;
+
 
 /**
  * Abstract shape class to define a polygon.
@@ -32,6 +34,13 @@ public abstract class Polygon extends Shape
     @Override
 	public double getPerimeter()
     {
-    	// TODO: complete this...
+    	double totalSideLength = 0;
+    	
+    	//totals all the sides in the arraylist
+    	for(int i =0; i < sideLengths.size(); i++)
+    	{
+    		totalSideLength += sideLengths.get(i);
+    	}
+    	return totalSideLength;
     }
 }
