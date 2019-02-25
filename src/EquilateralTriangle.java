@@ -47,4 +47,9 @@ public class EquilateralTriangle extends Polygon
 	{
 		return "EquilateralTriangle";
 	}
+	@Override
+	public double getPerimeter()
+	{
+		return sideLength * 3;
+	}
 }

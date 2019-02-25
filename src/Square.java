@@ -13,5 +13,11 @@ public class Square extends Rectangle{
 	{
 		return "Square";
 	}
+	
+	@Override
+	public double getPerimeter()
+	{
+		return 4 * this.getHeight();
+	}
 }
 

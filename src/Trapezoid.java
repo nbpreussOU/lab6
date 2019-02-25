@@ -71,5 +71,10 @@ public class Trapezoid extends Polygon
 	{
 		return "Trapezoid";
 	}
+	@Override
+	public double getPerimeter()
+	{
+		return leftSide + rightSide + topBase + bottomBase;
+	}
 
 }

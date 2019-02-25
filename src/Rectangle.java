@@ -5,6 +5,14 @@ public class Rectangle extends Polygon{
 	
 	private double height, width;
 	
+	public double getHeight() {
+		return height;
+	}
+
+	public double getWidth() {
+		return width;
+	}
+
 	//constructor
 	public Rectangle(String id, double height, double width) {
 		super(id);
@@ -21,6 +29,12 @@ public class Rectangle extends Polygon{
 	public String getShapeType()
 	{
 		return "Rectangle";
+	}
+	
+	@Override
+	public double getPerimeter()
+	{
+		return width * 2 + height*2;
 	}
 	
 	
