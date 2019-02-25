@@ -1,3 +1,4 @@
+package lab6.src;
 /**
  * Lab 6
  *
@@ -95,7 +96,25 @@ public abstract class Shape implements Comparable<Shape>
 	@Override
 	public int compareTo(Shape s)
 	{
-		// TODO: complete this...
+		//area sorting
+		if(this.getArea() > s.getArea())
+		{
+			return 1;
+		}else if(this.getArea() < s.getArea())
+		{
+			return -1;
+			//perimeter sorting
+		}else if(this.getPerimeter() > s.getPerimeter())
+		{
+			return 1;
+		}else if(this.getPerimeter() < s.getPerimeter())
+		{
+			return -1;
+		}else
+			//if all else fails
+		{
+			return 0;
+		}
 	}
 
 	/**
@@ -129,6 +148,7 @@ public abstract class Shape implements Comparable<Shape>
 	@Override
 	public String toString()
 	{
-		// TODO: complete this...
+		String shape = getShapeType()+ "/t ID = " + getId() + "\t area = " + String.format("%.3f", getArea()) + "\t perimeter = " + String.format("%.3f",  getPerimeter());
+		return shape;
 	}
 }
