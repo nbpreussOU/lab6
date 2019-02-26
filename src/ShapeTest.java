@@ -1,4 +1,5 @@
 package lab6.src;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -110,7 +111,7 @@ public class ShapeTest
 	public void ShapeToStringTest()
 	{
 		Shape cir = new Circle("Circle10", 7.0);
-		Assert.assertEquals("Circle\t ID = Circle10\t area = 153.938\t perimeter = 43.982", cir.toString());
+		Assert.assertEquals("Circle:\t ID = Circle10\t area = 153.938\t perimeter = 43.982", cir.toString());
 	}
 
 	//==================================================================================================================

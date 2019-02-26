@@ -1,4 +1,5 @@
 package lab6.src;
+
 /**
  * Class to represent a trapezoid, a type of Polygon.
  *
