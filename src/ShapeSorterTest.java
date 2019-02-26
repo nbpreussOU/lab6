@@ -1,5 +1,6 @@
 package lab6.src;
 
+
 import java.util.Comparator;
 
 import org.junit.Assert;
@@ -127,6 +128,7 @@ public class ShapeSorterTest
 		
 		sorter.addShape(a);
 		
-		Assert.assertEquals("Rectangle:\t ID = test\t area = 18.000\t perimeter = 22.000", sorter.shapes.get(0).toString());
+		Assert.assertEquals("Rectangle:\t ID = test\t area = 18.000\t perimeter = 22.000", sorter.toString());
 	}
+	
 }

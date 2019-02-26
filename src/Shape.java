@@ -1,5 +1,6 @@
 package lab6.src;
 
+
 /**
  * Lab 6
  *

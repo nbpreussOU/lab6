@@ -1,5 +1,6 @@
 package lab6.src;
 
+
 import java.util.ArrayList;
 
 
@@ -25,9 +26,6 @@ public abstract class Polygon extends Shape
     {
         super(id);
         sideLengths = new ArrayList<Double>();
-        
-        //adds appropriate side lengths
-        sideLengths.add(this.getPerimeter());
     }
 
     /**
