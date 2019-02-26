@@ -181,8 +181,18 @@ public class ShapeTest
 		Shape trap = new Trapezoid("T1", 5.0, 5.0, 4.0, 10.0);
 		
 		Assert.assertEquals("Natural CompareTo should find shapes equal.", 0, sqr.compareTo(sqr2));
-		Assert.assertEquals("ShapePerimeterComparator gave incorrect ordering.", 1, rect.compareTo(sqr2));
-		Assert.assertEquals("ShapePerimeterComparator gave incorrect ordering.", -1, trap.compareTo(sqr2));
+		Assert.assertEquals("Natural CompareTo should find shapes equal.", 1, rect.compareTo(sqr2));
+		Assert.assertEquals("Natural CompareTo should find shapes equal.", -1, trap.compareTo(sqr2));
+		Assert.assertEquals("Natural CompareTo should find shapes equal.", -1, sqr.compareTo(rect));
 
     }
+	/**
+     * Tests get perimeter
+     */
+    public void GetPerimeterTest()
+    {
+        Polygon a = new Rectangle("test1", 9, 2);
+        Assert.assertEquals("Perimeter is incorrect", 22, a.getPerimeter(), 0.0001);
+    }
+	
 }
